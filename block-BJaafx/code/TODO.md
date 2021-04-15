@@ -56,7 +56,12 @@ function getProductOfDigits(num){
   if(num < 0){
     return `not a valid input`;
   }else{
-
+    let prod = 1;
+    let str = String(num);
+    for(let i=0;i<str.length;i++){
+      prod = prod * Number(str[i]);
+    }
+    return prod;
   }
 }
 ```
